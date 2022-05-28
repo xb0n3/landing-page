@@ -11,6 +11,10 @@ $white: #f9faf8;
 $grey: #6d747d;
 $blue: #3882f6;
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -31,7 +35,7 @@ section {
   background-color: inherit;
 }
 
-section.row-two {
+section#row-two {
   background-color: $light;
 }
 
