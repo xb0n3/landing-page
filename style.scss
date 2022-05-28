@@ -66,6 +66,35 @@ footer {
   }
 }
 
+.items {
+  height: 496px;
+  @include flex;
+  flex-direction: column;
+  row-gap: 56px;
+
+  .items-wrapper {
+    @include flex;
+    column-gap: 48px;
+
+    .item {
+      width: 168px;
+      @include flex;
+      flex-direction: column;
+      flex: 1;
+      text-align: center;
+
+      .item-image {
+        width: 168px;
+        height: 168px;
+        border-radius: 16px;
+        @include flex;
+      }
+    }
+  }
+}
+
+
+
 footer {
   height: 100px;
 }
