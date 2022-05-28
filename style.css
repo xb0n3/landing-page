@@ -1,6 +1,68 @@
 * {
   border: 1px solid blue;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+header,
+section,
+footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation,
+.hero,
+.items,
+.quote,
+.action {
+  width: 1024px;
+}
+
+.navigation {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation ul {
+  display: flex;
+  list-style-type: none;
+  column-gap: 24px;
+}
+
+.hero {
+  height: 475px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-wrapper {
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch;
+  column-gap: 56px;
+}
+.hero .hero-wrapper .hero-info,
+.hero .hero-wrapper .hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.hero .hero-wrapper .hero-info {
+  align-items: flex-start;
+}
+
+footer {
+  height: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

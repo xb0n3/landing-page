@@ -1,4 +1,71 @@
+@mixin flex($flex: center) {
+  display: flex;
+  justify-content: $flex;
+  align-items: center
+}
+
+$dark: #1f2937;
+$light: #e5e7eb;
+$white: #f9faf8;
+$blue: #3882f6;
+
 * {
   border: 1px solid blue;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav,
+header,
+section,
+footer {
+  max-width: 100%;
+  @include flex;
+}
+
+.navigation,
+.hero,
+.items,
+.quote,
+.action {
+  width: 1024px;
+}
+
+.navigation {
+  height: 60px;
+  @include flex($flex: space-between);
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    column-gap: 24px;
+  }
+}
+
+.hero {
+  height: 475px;
+  @include flex;
+
+  .hero-wrapper {
+    height: 240px;
+    @include flex;
+    align-items: stretch;
+    column-gap: 56px;
+
+    .hero-info,
+    .hero-image {
+      @include flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .hero-info {
+      align-items: flex-start;
+    }
+  }
+}
+
+footer {
+  height: 100px;
 }
