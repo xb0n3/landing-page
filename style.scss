@@ -93,7 +93,30 @@ footer {
   }
 }
 
+.quote {
+  height: 424px;
+  @include flex;
 
+  .quote-wrapper {
+    width: 800px;
+
+    p {
+      text-align: right;
+    }
+  }
+}
+
+.action {
+  height: 352px;
+  @include flex;
+
+  .action-wrapper {
+    width: 100%;
+    padding: 60px 120px;
+    border-radius: 8px;
+    @include flex($flex: space-between);
+  }
+}
 
 footer {
   height: 100px;

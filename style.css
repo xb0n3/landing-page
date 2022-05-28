@@ -93,6 +93,34 @@ footer {
   align-items: center;
 }
 
+.quote {
+  height: 424px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote .quote-wrapper {
+  width: 800px;
+}
+.quote .quote-wrapper p {
+  text-align: right;
+}
+
+.action {
+  height: 352px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.action .action-wrapper {
+  width: 100%;
+  padding: 60px 120px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 footer {
   height: 100px;
 }
